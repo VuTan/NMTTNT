@@ -21,6 +21,7 @@ public class Node {
 		this.neighbours = neighbours;
 		this.parent = parent;
 	}
+	//add new comment
 
 	public void addNeighbours(Node neighbourNode) {
 		this.neighbours.add(neighbourNode);
