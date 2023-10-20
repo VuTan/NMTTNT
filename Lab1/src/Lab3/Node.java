@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Node {
+public class Node implements Cloneable {
 	int n;
 	List<Integer> state;
 
@@ -22,4 +22,14 @@ public class Node {
 		this.state = state;
 	}
 
+	@Override
+	public String toString() {
+		return "Node [state=" + state + "]";
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
 }
