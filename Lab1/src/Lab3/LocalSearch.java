@@ -57,6 +57,7 @@ public class LocalSearch {
 				}
 			}
 		}
+		System.out.println(sorted.values());
 		return sorted;
 	}
 
@@ -74,7 +75,6 @@ public class LocalSearch {
 		int count = 0;
 		while (bestHeuristic < heuristic(node)) {
 			node.state = sortMap.get(bestHeuristic);
-			System.out.println("Node " + node.state);
 			sortMap = generateNeighbours(node);
 			bestHeuristic = sortMap.firstKey();
 			count++;
